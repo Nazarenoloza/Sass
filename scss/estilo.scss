@@ -17,7 +17,7 @@ $body-color:#b950eeec;
 
 .fondo{
   @include color-fondo();
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family:Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif ;
 }
 
 .menu{
@@ -51,12 +51,14 @@ a:hover {
     flex-wrap: nowrap; 
     padding: 50px;
     border-radius: 20px;
+    
 
     .flex-item2{
         text-align: center;          
     }
     img{
-      border-radius: 10px;   
+      border-radius: 10px;  
+      ; 
       
     }
     
@@ -73,6 +75,8 @@ a:hover {
     button{
       padding: 5px;
     }
+
+ 
 
    }
    /////////////////////////////////////*vista destkop section*///////////////////////////////////
@@ -196,9 +200,24 @@ a:hover {
 }
 
 .p-nosotros{
-  text-align: center;
-  gap: 25px;
+  
+  display: flex;
+  
+  flex-direction: column;
+  margin-left: 25%;
+  margin-right: 20%;
+  align-items: flex-start;
+  
 }
+.lista-nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.lista-nosotros li{
+  list-style-type: none;
+}
+
 .iso{
   text-align: center;
 }
